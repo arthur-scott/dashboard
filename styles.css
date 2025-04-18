@@ -12,9 +12,31 @@
 }
 
 .header {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
     grid-column: 2;
     grid-row: 1;
     background-color: #4e82b6;
+}
+
+.search-bar {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.header-button {
+    height: 60%;
+    border-radius: 10px;
+    width: 5rem;
 }
 
 .sidebar {
@@ -33,7 +55,44 @@
 }
 
 .main-content {
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
     grid-column: 2;
     grid-row: 2;
-    background-color: #ffffff;
+    background-color: #b0e4e6b0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column: 1;
+    grid-row: 1/-1;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    border: black solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 5px;
+    outline: solid black;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 5px;
+    outline: solid black;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 10px;
 }
