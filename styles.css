@@ -17,25 +17,71 @@
     grid-column: 2;
     grid-row: 1;
     background-color: #4e82b6;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 .search-bar {
+    display: flex;
+    align-items: center;
     grid-column: 1;
     grid-row: 1;
-    padding-left: 10px;
-    padding-top: 10px;
+    gap: 5px;
+    padding-left: 30px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#search {
+    width: 400px;
+    height: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    padding: 5px;
+    box-shadow: none;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: center;
+    gap: 20px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.header-profilepic {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.header-profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-buttons {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     grid-column: 2;
     grid-row: 2;
 }
 
 .header-button {
     height: 60%;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: none;
     width: 5rem;
 }
 
@@ -71,15 +117,35 @@
     padding: 10px;
 }
 
+.projects-header {
+    grid-column: 1/-1;
+    grid-row: 1;
+    margin: 0;
+}
+
 .card {
     border: black solid;
     padding: 10px;
     border-radius: 5px;
 }
 
-.announcements {
+.announcements-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    gap: 10px;
+    padding: 10px;
     grid-column: 2;
     grid-row: 1;
+}
+
+.announcements-header {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.announcements {
+    grid-column: 1;
+    grid-row: 2;
     border-radius: 5px;
     outline: solid black;
     margin-top: 5px;
@@ -87,9 +153,21 @@
     padding: 10px;
 }
 
-.trending {
+.trending-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
     grid-column: 2;
     grid-row: 2;
+    padding: 10px;
+}
+
+.trending-header {
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.trending {
     border-radius: 5px;
     outline: solid black;
     margin-top: 5px;

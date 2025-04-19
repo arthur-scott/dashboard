@@ -10,6 +10,13 @@
         <div class="grid-container">
             <header class="header">
                 <form action="" class="search-bar" method="get">
+                    <button type="submit" class="search-button">
+                        <img
+                            width="20px"
+                            src="icons/magnify.svg"
+                            alt="Search"
+                        />
+                    </button>
                     <label for="search"></label>
                     <input
                         type="text"
@@ -17,8 +24,33 @@
                         name="search"
                         id="search"
                     />
-                    <button type="submit">Search</button>
                 </form>
+
+                <div class="header-icons">
+                    <img
+                        width="20px"
+                        src="icons/bell-ring-outline.svg"
+                        alt="Notifications"
+                    />
+                    <img
+                        width="40px"
+                        src="icons/account-box-outline.svg"
+                        alt="Profile"
+                    />
+                    <p>New User</p>
+                </div>
+
+                <div class="header-profilepic">
+                    <img
+                        width="80px"
+                        src="icons/account-box-outline.svg"
+                        alt="Profile"
+                    />
+                    <div class="header-profile-text">
+                        <p>Hi there,</p>
+                        <p>New User (@newuser)</p>
+                    </div>
+                </div>
 
                 <div class="header-buttons">
                     <button class="header-button" type="button">New</button>
@@ -47,8 +79,8 @@
             </div>
 
             <div class="main-content">
-                <p>Projects</p>
                 <div class="projects">
+                    <p class="projects-header">Projects</p>
                     <div class="card">
                         <h3>Project 1</h3>
                         <p>Project description goes here.</p>
@@ -99,13 +131,18 @@
                     </div>
                 </div>
 
-                <div class="announcements">
-                    <p>Announcements</p>
+                <div class="announcements-container">
+                    <p class="announcements-header">Announcements</p>
+                    <div class="announcements">
+                        <p>Sample text blah</p>
+                    </div>
                 </div>
 
-                <div class="trending">
-                    <p>Trending</p>
-                    <p>Sample text blah</p>
+                <div class="trending-container">
+                    <p class="trending-header">Trending</p>
+                    <div class="trending">
+                        <p>Sample text blah</p>
+                    </div>
                 </div>
             </div>
         </div>
