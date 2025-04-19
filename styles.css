@@ -79,7 +79,7 @@
 }
 
 .header-button {
-    height: 60%;
+    height: 40%;
     border-radius: 30px;
     border: none;
     width: 5rem;
@@ -92,12 +92,22 @@
     background-color: #0cbdb4;
 }
 
-.sidebar-menu {
+.sidebar-menu, .sidebar-settings {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    gap: 8px;
 }
 
-.sidebar-settings {
-    padding: 1rem;
+.sidebar-pairing {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+.side-image {
+    width: 30px;
 }
 
 .main-content {
